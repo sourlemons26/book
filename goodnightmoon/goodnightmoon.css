@@ -1,0 +1,107 @@
+
+.background {
+    height: 600px;
+    width: 706px;
+    border: black 1px solid;
+    background:url("bookcover.png");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes stars_fade {
+    0%   {  opacity: 0; }
+    50%  {opacity: 1;}
+    100% {  opacity: 0; } }
+
+.stars {
+    height: 600px;
+    width: 711px;
+    background:url("stars.png");
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    animation: stars_fade 2s infinite ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+
+.goodnight {
+    font-family: Futura;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50pt;
+    color: yellow;
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    transition: 1s;
+    z-index: 3;
+}
+.goodnight:hover {
+    color: white;
+    transition: 1s;
+}
+
+
+.moon {
+    font-family: Futura;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50pt;
+    color: yellow;
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    transition: 1s;
+    z-index: 3;
+}
+
+.moon:hover {
+    color: white;
+    transition: 1s;
+}
+
+.author {
+    font-family: Futura;
+    font-weight: bold;
+    font-size: 14pt;
+    color: yellow;
+    position: absolute;
+    left: 200px;
+    top: 475px;
+    animation: bottomtext1 2s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+.illustrator {
+    font-family: Futura;
+    font-weight: bold;
+    font-size: 14pt;
+    color: yellow;
+    position: absolute;
+    left: 200px;
+    top: 510px;
+    animation: bottomtext 2s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bottomtext1 {
+    0%, 100% { top: 475px}
+    20% {top: 485px}
+    40% {top: 495px}
+    60% {top: 485px}
+    80% {top: 465px}
+}
+
+@keyframes bottomtext {
+    0%, 100% { top: 510px}
+    20% {top: 520px}
+    40% {top: 530px}
+    60% {top: 520px}
+    80% {top: 500px}
+}
